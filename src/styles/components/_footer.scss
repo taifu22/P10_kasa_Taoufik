@@ -1,0 +1,17 @@
+.div-footer {
+    margin: 0;
+    background-color: black;
+    height: 209px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 102px;
+        height: 57px;
+    }
+    p {
+        color: white;
+    }
+}

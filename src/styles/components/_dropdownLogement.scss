@@ -1,0 +1,43 @@
+.dropdown-logements {
+    margin-bottom: 20px;
+    width: 45%;
+    font-size: 18px;
+    .dropdown-logements-header {
+        width: 100%;
+        height: 40px;
+        background-color: $primary-color;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        color: white; 
+        .rotate2 {
+            animation: rotation2 0.5s;
+        }
+        .rotate1 {
+            animation: rotation1 0.5s;
+        }
+    }
+    .dropdown-logements-body {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: $back-color;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .dropdown-logements{
+        font-size: 13px;
+        width: 100%;
+        .dropdown-logements-header{
+            height: 30px;
+            border-radius: 5px;
+            align-items: center;
+        }
+        .dropdown-logements-body{
+            border-radius: 5px;
+        }
+    }
+}

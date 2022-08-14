@@ -1,0 +1,103 @@
+.div-logements {
+    margin: 50px;
+    font-size: 18px;
+    color: $primary-color;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    .container-logements {
+        display: flex;
+        justify-content: space-between;
+        .div-title-logements {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .div-title-logements-city {
+                .p-title-logements {
+                    margin-top: 30px;
+                    font-size: 36px;
+                }
+                .p-location {
+                    margin-top: 10px;
+                }
+            }
+            .div-tag-logement {
+                display: flex;
+            }
+        }
+        .div-name-star-logement {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .host-name-logement {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                p {
+                    width: 50px;
+                    margin-right: 30px;
+                }
+                .round-name-logement {
+                    height: 64px;
+                    width: 64px;
+                    background-color: #C4C4C4;
+                    border-radius: 50%;
+                }
+            }
+            .div-star-logement {
+                margin-top: 20px;
+            }
+        }
+    }
+    .list-dropdown {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .div-logements{
+        margin: 20px;
+        .container-logements{
+            display: flex;
+            flex-direction: column;
+            .div-title-logements{
+                .div-title-logements-city{
+                    .p-title-logements{
+                        font-size: 18px;
+                    }
+                    .p-location{
+                        font-size: 14px;
+                    }
+                } 
+            }
+            .div-name-star-logement {
+                display: flex;
+                flex-direction: row-reverse;
+
+                .host-name-logement {
+                    margin-top: 0;
+                    p {
+                        font-size: 12px;
+                        margin-right: 20px;
+                    }
+                    .round-name-logement {
+                        height: 32px;
+                        width: 32px;
+                    }
+                }
+                .div-star-logement {
+                    margin-top: 20px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .list-dropdown {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+    }
+}

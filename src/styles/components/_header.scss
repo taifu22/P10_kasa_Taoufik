@@ -1,0 +1,15 @@
+.div-app-header {
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-header {
+    height: 40px;
+}
+
+@media screen and (max-width: 375px){
+    .div-app-header{
+        margin: 20px;
+    }
+}
