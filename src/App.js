@@ -1,7 +1,7 @@
 import './styles/style.scss';
 import Erreur_404 from './pages/Erreur_404';
 import Home from './pages/Home';
-import Logements from './pages/Logement';
+import Logement from './pages/Logement';
 import About from './pages/About';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
@@ -15,11 +15,11 @@ function App() {
           <Routes>
               <Route path='/' exact element={<Home />}/>
               <Route path='about' exact element={<About />}/>
-              <Route path='fiche_logement' exact element={<Logements />}/>
+              <Route path='fiche_logement/:logementId' exact element={<Logement />}/>
               <Route path='*' element={<Erreur_404 />}/>
           </Routes>
+        <Footer />  
         </BrowserRouter> 
-      <Footer />
     </div>
   );
 }

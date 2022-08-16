@@ -8,7 +8,7 @@ function Home() {
     const [datalogement, setDataLogement] = useState();
 
     useEffect(() => {
-        fetch('http://localhost:3000/fichier.json', {
+        fetch('./fichier.json', {
             headers : { 
               'Content-Type': 'application/json',
               'Accept': 'application/json'
@@ -30,8 +30,8 @@ function Home() {
                <div className="texte_centrer">Chez vous, partout et ailleurs</div>
            </div>
            <div className='container-home'>
-             {datalogement && datalogement.logements.map(item => {
-                return <LogementHome title={item}/>
+             {datalogement && datalogement.logements.map((item, index) => {
+                return <LogementHome title={item} key={'logement'+index} />
              })}
            </div>
         </div>

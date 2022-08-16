@@ -5,16 +5,16 @@
     align-items: center;
     margin-bottom: 40px;
     .image-about {
-        margin: 20px;
         position: relative;
         text-align: center;
         color: white;
         img {
+            overflow: hidden;
             width: 100%;
             opacity: 1;
             object-fit: cover;
             border-radius: 25px;
-            filter: brightness(70%);
+            filter: brightness(70%); 
         }
     }
     .dropdown-container {

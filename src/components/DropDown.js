@@ -18,7 +18,7 @@ function DropDown(props) {
             {toggleDropdown && <div className='dropdown-body'>
                  <p>{props.text}</p>
             </div>}
-        </div>
+        </div> 
     );
 }
 
